@@ -1,0 +1,66 @@
+body {
+  color: white;
+}
+
+.innhold {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .innhold {
+    padding-bottom: 30px;
+  }
+}
+
+.caption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.artistHeader {
+  text-align: center;
+}
+
+.artistInfo a {
+  color: #e6b23a;
+}
+
+.blockquote-footer {
+  color: white;
+}
+
+/* Video embed */
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  /*margin-bottom: 10px;*/
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+ 
+.js-video.widescreen {
+  padding-bottom: 56.25%;
+  /*padding-bottom: 62.5%;*/
+}
+
+.js-video.cinema {
+  padding-bottom: 41%;
+}
+ 
+.js-video.vimeo {
+  padding-top: 0;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+iframe {
+  border-radius: 0.3rem;
+}

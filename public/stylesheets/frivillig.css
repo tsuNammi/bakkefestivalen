@@ -1,0 +1,73 @@
+.headerContainer p, .footerContainer p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+#linky {
+  color: #e6b23a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* light up + text appear */
+
+#headerBilde span {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	color: #e6b23a;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-text-stroke: 1px #000; 
+}
+
+#headerBilde a:hover+span {
+	top: 65%;
+	opacity: 1;
+}
+
+#footerBilde span {
+  position: absolute;
+	top: 90%;
+	left: 0;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	color: #e6b23a;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-text-stroke: 1px #000; 
+}
+
+#footerBilde a:hover+span {
+  top: 85%;
+	opacity: 1;
+}
+
+.headerBilde a {
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.headerBilde a img {
+  width: 100%;
+}
+
+.headerBilde a:hover {
+  -webkit-filter: brightness(125%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}

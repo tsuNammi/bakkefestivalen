@@ -1,0 +1,266 @@
+/* NAVBAR */
+.logo {
+  height: 75px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    height: 100px;
+  }
+  .navbar-brand.nav-link {
+    margin-right: 0;
+  }
+}
+
+#mainNavbar .nav-item {
+  margin-right: 5px;
+}
+
+.navbar {
+  background: #36BFBE;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link.navActive {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-item {
+  font-size: 24px;
+}
+
+button:active, .button:active, button:focus, .button:focus, button:hover, .button:hover{
+  outline:none !important;
+}
+
+.navbar .navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.fa-ticket-alt {
+  color: #e6b23a;
+}
+
+#navFrivillig a {
+  height: 52px;
+}
+
+#frivillig_icon {
+  width: 36px;
+  height: auto;
+} 
+
+/* nav bar scroll */
+
+.navbarScroll {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  background-color: rgba(54, 191, 190, 0.6);
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.abs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* mobile navbar stuff */
+
+.navbar-dark .navbar-toggler-icon {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgb(255,255,255);
+}
+
+.navbar-toggler {
+  margin-right: 15px;
+  position: absolute;
+  top: 17.5px;
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .d-md-flex.d-block.flex-row.mx-auto {
+    margin-left: 15px !important; 
+    padding-left: 0;
+  }
+  
+  .navbar-brand.nav-link.d-md-none.d-lg-none.d-xl-none {
+    padding-left: 0;
+  }
+}
+/* CONTENT */
+body {
+  background: #36BFBE;
+  font-weight: 300;
+}
+
+img {
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(rgba(8, 235, 219, 0.47), rgba(8, 235, 219, 0.47)), url(/images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+.hoved {
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+
+.innhold {
+  background: rgba(22, 22, 22, 0.3);
+  color: white;
+  min-height: 68vh;
+  border-radius: 0.3rem;
+  padding: 15px;
+}
+
+.innhold .container {
+	padding-left: 0;
+	padding-right: 0;
+}  
+
+@media (min-width: 768px) {
+  .hoved {
+    margin-top: 130px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .innhold {
+    padding: 30px;
+  }
+}
+
+/* Underline From Center */
+.navInactive {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    color: rgba(255,255,255,.75);
+}
+.navInactive:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: red;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+.navInactive:hover:before, .navInactive:focus:before, .navInactive:active:before {
+    left: 0;
+    right: 0;
+}
+
+.navActive {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.navActive:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    height: 2px;
+}
+
+
+/* SPONSORS */
+
+.sponsors {
+  background-color: white;
+  height: 400px;
+}
+
+@media only screen and (min-width: 415px) {
+  .sponsors {
+    height: 200px;
+  }
+}
+
+.sponsors img {
+  max-height: 50px;
+  width: auto;
+}
+
+#trheim_kommune {
+  max-height: 60px;
+}
+
+#dbcontrol {
+  max-height: 70px;
+}
+
+#trheim_lyd {
+  max-height: 25px;
+}
+
+/* FOOTER */
+
+#footer-bottom {
+  min-height: 64px;
+  background-color: rgb(21,21,21);
+}
+
+.container.social {
+  height: auto;
+  padding: 20px 0;
+}
+
+.social a {
+  color: rgb(255,255,255);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+

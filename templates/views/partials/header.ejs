@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png"/>
+    <% if (typeof title !== 'undefined') { %>
+      <title><%= title %></title> 
+    <% } else if (typeof data !== 'undefined') { %>
+      <% if (data.nyhet) { %>
+        <title><%= data.nyhet.title %></title>
+      <% } else if (data.artist) { %>
+        <title><%= data.artist.title %></title>
+      <% } %>
+    <% } else { %>
+      <title>Bakkefestivalen 2018</title>
+    <% } %>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top" id="mainNavbarContainer">
+      <div class="d-md-flex d-block flex-row mx-auto">
+        <a href="/" class="navbar-brand nav-link d-md-none d-lg-none d-xl-none"><img src="/images/BF-logo_2017_w150.png" class="logo"></a>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item my-auto" id="navFrivillig"><a href="/frivillig" class=<%- (section == 'frivillig') ? '"nav-link navActive"' : '"nav-link navInactive"' %>><img class="jump" id="frivillig_icon" src="/images/frivillig_icon.svg"></img> Bli frivillig!</a></li>
+            <li class="nav-item my-auto"><a href="/info" class=<%- (section == 'info') ? '"nav-link navActive"' : '"nav-link navInactive"' %>>Info</a></li>
+            <li class="nav-item d-none d-md-inline"><a href="/" class="navbar-brand nav-link"><img src="/images/BF-logo_2017_w150.png" class="logo"></a></li>
+            <li class="nav-item my-auto"><a href="/artister" class=<%- (section == 'artister') ? '"nav-link navActive"' : '"nav-link navInactive"' %>>Artister</a></li>            <!--<li class="nav-item"><a href="/frivillig" class=<#%- (section == 'frivillig') ? '"nav-link navActive"' : '"nav-link navInactive"' %>>Bli frivillig!</a></li>-->
+            <li class="nav-item my-auto"><a target="_blank" href="https://bakkefestivalen.hoopla.no/sales/3248098352" class="nav-link navInactive">Billetter  <i class="fas fa-lg fa-ticket-alt fa-spin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+      
+  <style>
+
+  </style>

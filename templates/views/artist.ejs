@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/artist.css">
+
+<div class="container hoved">
+  <div class="container artistContainer innhold">
+    <div class="row">
+      <div class="col-12 mx-auto">
+        <img class="img-fluid d-block mx-auto" src="<%= data.artist._.image.fit(950,950) %>">
+        <p class="caption"><%= data.artist.caption %></p>
+      </div>
+      <div class="col-12 mx-auto artistHeader">
+        <h1 class="display-1"><%= data.artist.title %></h1>
+      </div>
+      <div class="col-12 mx-auto artistInfo">
+        <p><strong><%- data.artist.brief %></strong>
+        <%- data.artist.content %>
+        <a target="_blank" href="https://bakkefestivalen.hoopla.no/sales/3248098352"><h3>Kjøp billetter her!</h3></a>
+        </p>
+      </div>
+      <div class="col-12 mx-auto artistMedia">
+        <div class="js-video widescreen">
+          <iframe src="https://www.youtube.com/embed/<%= data.artist.youtubeLink %>?showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>

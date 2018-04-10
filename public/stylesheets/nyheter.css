@@ -1,0 +1,60 @@
+.nyhet {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .nyhet {
+    margin-top: 30px;
+  }
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+.nyhet a {
+  color: #e6b23a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nyhet .dato {
+  font-weight: 300;
+}
+
+.page-link a:active, .page-link a:focus {
+  outline: 0 !important;
+}
+
+.page-item.disabled .page-link, .page-item .page-link {
+  background-color: transparent;
+  transition: background-color .3s;
+}
+
+.page-item.disabled .page-link {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+}
+
+.page-item.active .page-link {
+  background-color: #e6b23a;
+  border: 1px solid #fff;
+}
+
+.page-item .page-link {
+  color: #e6b23a;
+  border: 1px solid #fff;
+}
+
+.page-item .page-link:hover {
+  background-color: #fff;
+  transition: background-color .3s;
+}
+
+.page-item.active .page-link:hover {
+  background-color: #e6b23a;
+}
+
+.pagination {
+  margin-bottom: 0;
+}

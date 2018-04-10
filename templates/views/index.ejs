@@ -1,0 +1,58 @@
+<% include partials/header %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+
+<div class="container">
+  
+  <div class="jumbotron" style="background: linear-gradient(rgba(22, 22, 22, 0.25), rgba(22, 22, 22, 0.25)), url(<%= data.nyhet._.image.fit(1110,750) %>) no-repeat center center; background-size: cover;">
+    <div id="jumboHeader">
+      <h1 class="text-center"><%= data.nyhet.title %></h1>
+      <hr>
+    </div>
+    <div id="jumboFooter">
+      <div id="hovedNyhetBrief"><%- data.nyhet.brief %></div>
+      <p class="lead">
+        <a class="btn btn-light btn-lg hvr-bounce-to-right hvr-icon-wobble-horizontal" href="/nyheter/<%= data.nyhet.slug %>">Les mer <i class="fas fa-arrow-alt-circle-right hvr-icon"></i></a>
+      </p>
+      </div>
+  </div>
+
+	<div class="container nyheter">
+	  <a class="btn btn-light btn-lg hvr-sweep-to-bottom hvr-icon-wobble-vertical" href="/nyheter/"><h3>Nyheter <i class="far fa-newspaper hvr-icon"></i></h3></a>
+	  <div class="card-deck first">
+      <% data.nyheter.results.slice(0,3).forEach(function(nyhet) { %>
+			  <div class="card">
+			    <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><img class="card-img-top" src="<%= nyhet._.thumbnail.fit(338,338) %>" alt="Card image cap"></a>
+          <div class="card-body">
+            <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
+            <hr>
+            <div class="card-text"><%- nyhet.brief.substring(0,400) %> ... </div>
+          </div>
+          <div class="card-footer">
+            <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
+          </div>
+			  </div>
+			<% }); %>
+		</div>
+ 
+	  <div class="card-deck last">
+      <% data.nyheter.results.slice(3,6).forEach(function(nyhet) { %>
+			  <div class="card">
+			    <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><img class="card-img-top" src="<%= nyhet._.thumbnail.fit(338,338) %>" alt="Card image cap"></a>
+          <div class="card-body">
+            <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
+            <hr>
+            <div class="card-text"><%- nyhet.brief.substring(0,400) %> ... </div>
+          </div>
+          <div class="card-footer">
+            <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
+          </div>
+			  </div>
+			<% }); %>
+		</div>
+		<a class="btn btn-light btn-lg hvr-sweep-to-top hvr-icon-wobble-vertical" href="/nyheter/" id="nedreNyhetBtn"><h3>Nyheter <i class="far fa-newspaper hvr-icon"></i></h3></a>
+  </div>
+			  
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,18 @@
+.caption {
+  text-align: center;
+  font-size: 12px;
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+.nyhet a {
+  color: #e6b23a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+}

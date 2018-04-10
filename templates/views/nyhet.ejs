@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/nyhet.css">
+
+<div class="container hoved">
+ <div class="container innhold">
+  <div class="row">
+   <div class="col-12 mx-auto">
+ 			<% if (data.nyhet.image.exists) { %>
+           <img src="<%= data.nyhet._.image.fit(1110,500) %>" class="img-fluid mx-auto d-block">
+       <% } %>
+       <h1><%= data.nyhet.title %> </h1>
+       <p><%= data.nyhet._.publishedDate.format('ll') %></p>
+       <hr>
+       <div class="nyhet">
+         <strong><%- data.nyhet.brief %></strong>
+         <%- data.nyhet.content %>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+<% include partials/footer %>
