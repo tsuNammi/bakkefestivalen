@@ -56,6 +56,9 @@
             <hr>
             <div class="card-text">
                 <%- nyhet.brief.substring(0,400) %>
+                <% if (nyhet.brief.length > 400) { %>
+                    ...
+                <% } %>
             </div>
           </div>
           <div class="card-footer">
