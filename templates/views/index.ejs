@@ -22,25 +22,21 @@
 	<div class="container nyheter">
 	  <a class="btn btn-light btn-lg hvr-sweep-to-bottom hvr-icon-wobble-vertical" href="/nyheter/"><h3>Nyheter <i class="far fa-newspaper hvr-icon"></i></h3></a>
 	  <div class="card-deck first">
-	    <div class="row">
-        <% data.nyheter.results.slice(0,3).forEach(function(nyhet) { %>
-          <div class="col-12 col-md-4">
-    			  <div class="card">
-    			    <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><img class="card-img-top" src="<%= nyhet._.thumbnail.fit(338,338) %>" alt="Card image cap"></a>
-              <div class="card-body">
-                <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
-                <hr>
-                <div class="card-text">
-                  <%- nyhet.brief %>
-                </div>
-              </div>
-              <div class="card-footer">
-                <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
-              </div>
-    			  </div>
-  			  </div>
-  			<% }); %>
-			</div>
+      <% data.nyheter.results.slice(0,3).forEach(function(nyhet) { %>
+			  <div class="card">
+			    <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><img class="card-img-top" src="<%= nyhet._.thumbnail.fit(338,338) %>" alt="Card image cap"></a>
+          <div class="card-body">
+            <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
+            <hr>
+            <div class="card-text">
+              <%- nyhet.brief %>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
+          </div>
+			  </div>
+			<% }); %>
 		</div>
  
 	  <div class="card-deck last">
