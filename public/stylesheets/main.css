@@ -135,7 +135,7 @@ img {
 .innhold {
   background: rgba(22, 22, 22, 0.3);
   color: white;
-  min-height: 68vh;
+  min-height: 58vh;
   border-radius: 0.3rem;
   padding: 15px;
 }
