@@ -10,7 +10,13 @@
       <hr>
     </div>
     <div id="jumboFooter">
-      <div id="hovedNyhetBrief"><%- data.nyhet.brief.substring(0,400) %> ... </div>
+      <div id="hovedNyhetBrief">
+        <% if (nyhet.brief.length > 400) { %>
+          <%- nyhet.brief.substring(0,400) %> ...
+        <% } else { %>
+          <%- nyhet.brief %>
+        <% } %>
+      </div>
       <p class="lead">
         <a class="btn btn-light btn-lg hvr-bounce-to-right hvr-icon-wobble-horizontal" href="/nyheter/<%= data.nyhet.slug %>">Les mer <i class="fas fa-arrow-alt-circle-right hvr-icon"></i></a>
       </p>
@@ -28,7 +34,7 @@
             <hr>
             <div class="card-text">
               <% if (nyhet.brief.length > 400) { %>
-                <%- nyhet.brief.substring(0,400) %> ... 
+                <%- nyhet.brief.substring(0,400) %> ...
               <% } else { %>
                 <%- nyhet.brief %>
               <% } %>
