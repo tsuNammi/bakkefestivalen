@@ -9,6 +9,7 @@
    <div class="col-12 mx-auto">
  			<% if (data.nyhet.image.exists) { %>
            <img src="<%= data.nyhet._.image.fit(1110,500) %>" class="img-fluid mx-auto d-block">
+           <p class="caption"><%= data.nyhet.imageCredit %></p>
        <% } %>
        <h1><%= data.nyhet.title %> </h1>
        <p><%= data.nyhet._.publishedDate.format('ll') %></p>
