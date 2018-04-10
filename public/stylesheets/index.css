@@ -57,6 +57,10 @@
   overflow: hidden;
 }
 
+#jumboFooter a {
+  color: #e6b23a;
+}
+
 /* NYHETER */
 .nyheter {
   background: rgba(22, 22, 22, 0.3);

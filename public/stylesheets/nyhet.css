@@ -16,3 +16,7 @@ hr {
 p:last-child {
   margin-bottom: 0px;
 }
+
+.blockquote-footer {
+  color: white;
+}
