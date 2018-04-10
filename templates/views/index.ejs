@@ -35,11 +35,7 @@
                 <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
                 <hr>
                 <div class="card-text">
-                  <% if (nyhet.brief.length > 400) { %>
-                    <%- nyhet.brief.substring(0,400) %> ...
-                  <% } else { %>
-                    <%- nyhet.brief %>
-                  <% } %>
+                  <%- nyhet.brief %>
                 </div>
               </div>
               <div class="card-footer">
@@ -59,11 +55,7 @@
             <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
             <hr>
             <div class="card-text">
-              <% if (nyhet.brief.length > 400) { %>
-                <%- nyhet.brief.substring(0,400) %> ... 
-              <% } else { %>
-                <%- nyhet.brief %>
-              <% } %>
+                <%- nyhet.brief.substring(0,400) %>
             </div>
           </div>
           <div class="card-footer">
