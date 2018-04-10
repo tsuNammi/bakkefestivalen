@@ -10,7 +10,7 @@
       <hr>
     </div>
     <div id="jumboFooter">
-      <div id="hovedNyhetBrief"><%- data.nyhet.brief %></div>
+      <div id="hovedNyhetBrief"><%- data.nyhet.brief.substring(0,400) %> ... </div>
       <p class="lead">
         <a class="btn btn-light btn-lg hvr-bounce-to-right hvr-icon-wobble-horizontal" href="/nyheter/<%= data.nyhet.slug %>">Les mer <i class="fas fa-arrow-alt-circle-right hvr-icon"></i></a>
       </p>
@@ -26,7 +26,13 @@
           <div class="card-body">
             <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
             <hr>
-            <div class="card-text"><%- nyhet.brief.substring(0,400) %> ... </div>
+            <div class="card-text">
+              <% if (nyhet.brief.length > 400) { %>
+                <%- nyhet.brief.substring(0,400) %> ... 
+              <% } else { %>
+                <%- nyhet.brief %>
+              <% } %>
+            </div>
           </div>
           <div class="card-footer">
             <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
@@ -42,7 +48,13 @@
           <div class="card-body">
             <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
             <hr>
-            <div class="card-text"><%- nyhet.brief.substring(0,400) %> ... </div>
+            <div class="card-text">
+              <% if (nyhet.brief.length > 400) { %>
+                <%- nyhet.brief.substring(0,400) %> ... 
+              <% } else { %>
+                <%- nyhet.brief %>
+              <% } %>
+            </div>
           </div>
           <div class="card-footer">
             <small><%= nyhet._.publishedDate.format('ll') %></small><a class="card-link float-right hvr-icon-wobble-horizontal" href="/nyheter/<%= nyhet.slug %>">Les mer  <i class="fas fa-angle-right hvr-icon"></i></a>
