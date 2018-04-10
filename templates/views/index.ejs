@@ -11,10 +11,9 @@
     </div>
     <div id="jumboFooter">
       <div id="hovedNyhetBrief">
+        <%- data.nyhet.brief.substring(0,400) %>
         <% if (data.nyhet.brief.length > 400) { %>
-          <%- data.nyhet.brief.substring(0,400) %> ...
-        <% } else { %>
-          <%- data.nyhet.brief %>
+            ...
         <% } %>
       </div>
       <p class="lead">
@@ -35,7 +34,10 @@
                 <a class="card-link" href="/nyheter/<%= nyhet.slug %>"><h4 class="card-title"><%= nyhet.title %></h4></a>
                 <hr>
                 <div class="card-text">
-                  <%- nyhet.brief %>
+                  <%- nyhet.brief.substring(0,400) %>
+                  <% if (nyhet.brief.length > 400) { %>
+                      ...
+                  <% } %>
                 </div>
               </div>
               <div class="card-footer">
