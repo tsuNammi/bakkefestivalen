@@ -11,10 +11,10 @@
     </div>
     <div id="jumboFooter">
       <div id="hovedNyhetBrief">
-        <% if (nyhet.brief.length > 400) { %>
-          <%- nyhet.brief.substring(0,400) %> ...
+        <% if (data.nyhet.brief.length > 400) { %>
+          <%- data.nyhet.brief.substring(0,400) %> ...
         <% } else { %>
-          <%- nyhet.brief %>
+          <%- data.nyhet.brief %>
         <% } %>
       </div>
       <p class="lead">
