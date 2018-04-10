@@ -13,10 +13,9 @@
         <h1 class="display-1"><%= data.artist.title %></h1>
       </div>
       <div class="col-12 mx-auto artistInfo">
-        <p><strong><%- data.artist.brief %></strong>
+        <%- data.artist.brief %>
         <%- data.artist.content %>
         <a target="_blank" href="https://bakkefestivalen.hoopla.no/sales/3248098352"><h3>Kjøp billetter her!</h3></a>
-        </p>
       </div>
       <div class="col-12 mx-auto artistMedia">
         <% if (data.artist.youtubeLink) { %>
