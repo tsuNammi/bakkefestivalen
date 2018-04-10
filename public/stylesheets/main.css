@@ -111,9 +111,9 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   }
 }
 /* CONTENT */
-strong {
-  font-weight: bold !important;
-}
+/*strong {*/
+/*  font-weight: bold !important;*/
+/*}*/
 
 body {
   background: #36BFBE;
