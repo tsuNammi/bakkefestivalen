@@ -17,7 +17,7 @@ keystone.init({
   'custom engine': ejs.renderFile,
   
   'auto update': true,
-  'mongo': 'mongodb://tsunammi:Bakkemongofestivalen@localhost:27017/bakkefestivalen/admin',
+  'mongo': 'mongodb://Keystone:bakken@localhost/bakkefestivalen/',
   
   'session': true,
   'auth': true,
