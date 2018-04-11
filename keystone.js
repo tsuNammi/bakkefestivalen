@@ -4,6 +4,7 @@ var keystone = require('keystone');
 var ejs = require('ejs');
 var utils = require('keystone-utils');
 
+keystone.set('mongo','mongodb://tsunammi:Bakkemongofestivalen@localhost/bakkefestivalen/admin');
 keystone.init({
   
   'name': 'Bakkefestivalen',
@@ -41,6 +42,10 @@ keystone.set('routes', require('./routes'));
 keystone.set('cloudinary secure', true);
 keystone.set('name', 'Bakkefestivalen UI');
 keystone.set('brand', 'Bakkefestivalen');
+
+// Set host/port to listen on
+keystone.set('port', 3001);
+keystone.set('host', 'localhost');
 
 // Configure the navigation bar in Keystone's Admin UI
 keystone.set('nav', {
