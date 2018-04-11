@@ -233,16 +233,9 @@ img {
 
 
 /* SPONSORS */
-
 .sponsors {
   background-color: white;
-  height: 400px;
-}
-
-@media only screen and (min-width: 415px) {
-  .sponsors {
-    height: 200px;
-  }
+  height: 450px;
 }
 
 .sponsors img {
@@ -250,16 +243,75 @@ img {
   width: auto;
 }
 
-#trheim_kommune {
-  max-height: 60px;
+.sponsors .row:nth-child(2) img {
+  width: 100%;
+  height: auto;
+}
+
+#partners {
+  height: 250px;
+}
+
+#sponsors {
+  height: 200px;
+}
+
+@media only screen and (min-width: 415px) {
+  #partners {
+    height: 100px;
+  }
+  
+  #sponsors {
+    height: 100px;
+  }
+  
+  .sponsors {
+    height: 200px;
+  }
+  
+  #retura {
+    max-height: 50px;
+  }
+  
+  #trheim_kommune {
+    max-height: 60px;
+  }
+  
+  #witro {
+    max-height: 50px;
+  }
+  
+  #pcm {
+    max-height: 50px;
+  }
+  
+  #trheim_lyd {
+    max-height: 25px;
+  }
+  
+}
+
+#nka-container {
+  margin-left: 0!important;
+  margin-right: 0!important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#retura, #trheim_kommune, #pcm {
+  max-height: 40px;
+}
+
+#witro {
+  max-height: 30px;
+}
+
+#trheim_lyd {
+  max-height: 20px;
 }
 
 #dbcontrol {
   max-height: 70px;
-}
-
-#trheim_lyd {
-  max-height: 25px;
 }
 
 /* FOOTER */
