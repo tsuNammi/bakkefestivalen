@@ -5,7 +5,7 @@
 }
 
 #hovedNyhetBrief strong, .card-text strong {
-  font-weight: normal;
+  font-weight: normal !important;
 }
 
 /* JUMBOTRON */
