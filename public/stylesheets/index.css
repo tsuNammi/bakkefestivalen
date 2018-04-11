@@ -4,6 +4,10 @@
   }
 }
 
+#hovedNyhetBrief strong, .card-text strong {
+  font-weight: normal;
+}
+
 /* JUMBOTRON */
 
 .jumbotron {
