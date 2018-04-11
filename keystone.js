@@ -4,7 +4,6 @@ var keystone = require('keystone');
 var ejs = require('ejs');
 var utils = require('keystone-utils');
 
-keystone.set('mongo','mongodb://tsunammi:Bakkemongofestivalen@localhost/bakkefestivalen/admin');
 keystone.init({
   
   'name': 'Bakkefestivalen',
@@ -18,7 +17,7 @@ keystone.init({
   'custom engine': ejs.renderFile,
   
   'auto update': true,
-  'mongo': 'mongodb://localhost/bakkefestivalen',
+  'mongo': 'mongodb://tsunammi:Bakkemongofestivalen@localhost/bakkefestivalen/admin',
   
   'session': true,
   'auth': true,
