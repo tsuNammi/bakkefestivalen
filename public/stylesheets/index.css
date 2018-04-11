@@ -51,6 +51,15 @@
   width: 100%;
 }
 
+#jumboHeader a {
+  color: white;
+}
+
+#jumboHeader a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 #jumboFooter {
   align-self: flex-end;
   margin-top: auto;

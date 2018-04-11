@@ -6,7 +6,7 @@
   
   <div class="jumbotron" style="background: linear-gradient(rgba(22, 22, 22, 0.35), rgba(22, 22, 22, 0.35)), url(<%= data.nyhet._.image.fit(1110,720) %>) no-repeat center center; background-size: cover;">
     <div id="jumboHeader">
-      <h1 class="text-center"><%= data.nyhet.title %></h1>
+      <a href="/nyheter/<%= data.nyhet.slug %>"><h1 class="text-center"><%= data.nyhet.title %></h1></a>
       <hr>
     </div>
     <div id="jumboFooter">

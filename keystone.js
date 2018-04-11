@@ -20,6 +20,7 @@ keystone.init({
   'mongo': 'mongodb://Keystone:bakken@localhost/bakkefestivalen/',
   
   'session': true,
+  'session store': 'mongo',
   'auth': true,
   'user model': 'User',
   
