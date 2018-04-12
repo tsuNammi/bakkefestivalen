@@ -8,7 +8,7 @@
   <div class="row">
    <div class="col-12 mx-auto">
  			<% if (data.nyhet.image.exists) { %>
-           <img src="<%= data.nyhet._.image.fit(1110,720) %>" class="img-fluid mx-auto d-block">
+           <img src="<%= data.nyhet._.image.limit(1110,720) %>" class="img-fluid mx-auto d-block">
            <p class="caption"><%= data.nyhet.imageCredit %></p>
        <% } %>
        <h1><%= data.nyhet.title %> </h1>
