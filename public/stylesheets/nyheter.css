@@ -4,19 +4,13 @@
 }
 
 .nyhet .col-12 {
-  padding: 0;
+  padding: 0 15px;
 }
-
-
-
 
 @media (min-width: 768px) {
   .nyhet .row {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-  .nyhet .col-12 {
-    padding: 0 15px;
   }
 }
 
