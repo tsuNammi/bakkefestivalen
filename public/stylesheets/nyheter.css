@@ -1,10 +1,22 @@
-.nyhet {
+.nyhet .row {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .nyhet {
+.nyhet .col-12 {
+  padding: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .nyhet .row {
     margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .nyhet .col-12 {
+    padding: 0 15px;
   }
 }
 
