@@ -10,26 +10,21 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
   </head>
   <body>
-      
+    
     <nav class="navbar navbar-dark navbar-expand-md fixed-top" id="mainNavbarContainer">
-        
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
       <div class="d-md-flex d-block flex-row mx-auto">
-        <a href="/" class="navbar-brand nav-link"><img src="/images/BF-logo_2017.png" class="logo"></a>
+        <a href="/" class="navbar-brand nav-link d-md-none d-lg-none d-xl-none"><img src="/images/BF-logo_2017_w150.png" class="logo"></a>
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="/artister" class="nav-link navInactive">Artister</a></li>
-            <li class="nav-item"><a href="/info" class="nav-link navInactive">Info</a></li>
-            <li class="nav-item"><a href="/frivillig" class="nav-link navInactive">Bli frivillig!</a></li>
-            <li class="nav-item"><a target="_blank" href="https://bakkefestivalen.hoopla.no/sales/3248098352" class="nav-link navInactive">Billetter  <i class="fas fa-lg fa-ticket-alt fa-spin"></i></a></li>
+            <li class="nav-item my-auto" id="navFrivillig"><a href="/frivillig" class="nav-link navInactive"><img class="jump" id="frivillig_icon" src="/images/frivillig_icon.svg"></img> Bli frivillig!</a></li>
+            <li class="nav-item my-auto"><a href="/info" class="nav-link navInactive">Info</a></li>
+            <li class="nav-item d-none d-md-inline"><a href="/" class="navbar-brand nav-link"><img src="/images/BF-logo_2017_w150.png" class="logo"></a></li>
+            <li class="nav-item my-auto"><a href="/artister" class="nav-link navInactive">Artister</a></li>
+            <li class="nav-item my-auto"><a target="_blank" href="https://bakkefestivalen.hoopla.no/sales/3248098352" class="nav-link navInactive">Billetter  <i class="fas fa-lg fa-ticket-alt fa-spin"></i></a></li>
           </ul>
         </div>
       </div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
-      
-  <style>
-
-  </style>

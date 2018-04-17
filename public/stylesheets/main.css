@@ -100,7 +100,7 @@ button:active, .button:active, button:focus, .button:focus, button:hover, .butto
   right: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .d-md-flex.d-block.flex-row.mx-auto {
     margin-left: 15px !important; 
     padding-left: 0;
