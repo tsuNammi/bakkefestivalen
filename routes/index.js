@@ -41,5 +41,5 @@ exports = module.exports = function(app) {
 }
 
 // Redirect Routes
-keystone.redirect('/nabo', 'https://bakkefestivalen.hoopla.no/sales/3248098352/?promo=bakkenabo/');
-keystone.redirect('/nabovarsel', 'http://bakkefestivalen.no/public/pdfs/nabovarsel.pdf');
+keystone.redirect('/nabo', 'https://bakkefestivalen.hoopla.no/sales/3248098352/?promo=bakkenabo');
+keystone.redirect('/nabovarsel', '/pdfs/nabovarsel.pdf');
