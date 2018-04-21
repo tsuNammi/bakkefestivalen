@@ -17,12 +17,7 @@ exports = module.exports = function (req, res) {
 	
 		// Load the current nyhet
 	view.on('init', function (next) {
-		var q = keystone.list('Nyhet').model.findOne({ 
-			filters: { 
-				hovednyhet: true,
-			},
-		})
-			.sort({publishedDate: 'desc'});
+		var q = keystone.list('Nyhet').model.findOne().where('hovednyhet', true).sort({publishedDate: 'desc'});
 		q.exec(function (err, result) {
 			locals.data.nyhet = result;
 			next(err);
