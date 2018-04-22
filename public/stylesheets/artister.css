@@ -28,7 +28,7 @@
 		margin-top: 30px;
 		margin-bottom: 0px;
 	}
-	.rad2 .artist, .rad2 > .row > .artist:nth-child(3) {
+	.rad2 .artist, .rad2 > .row > .artist:nth-child(n-3) {
 		margin-bottom: 30px;
 		margin-top: 0;
 	}
