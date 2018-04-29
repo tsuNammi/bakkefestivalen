@@ -117,13 +117,9 @@ body {
   margin-bottom: 0;
 }
 
-#billettLinky {
+.container a {
   color: #e6b23a;
   text-decoration: underline;
-}
-
-#nabovarsel {
-  color: #fff;
   font-weight: bold;
 }
 
