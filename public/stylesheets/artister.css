@@ -107,3 +107,8 @@ a:hover+span {
 	filter: grayscale(100%) blur(3px);
 }
 
+/* Program */
+
+.container > img {
+	margin-bottom: 1rem;
+}

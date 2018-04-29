@@ -10,7 +10,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'artister';
 
 	// Render the view
-	view.render('artister', {title: "Artister - Bakkefestivalen 2018"});
+	view.render('artister', {title: "Program - Bakkefestivalen 2018"});
 };
 
 // module.exports = function (req, res) {

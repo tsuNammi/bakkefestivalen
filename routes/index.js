@@ -31,7 +31,8 @@ var routes = {
 exports = module.exports = function(app) {
     
     app.get('/', routes.views.index);
-    app.get('/artister', routes.views.artister);
+    // app.get('/artister', routes.views.artister);
+    app.get('/program', routes.views.artister);
     app.get('/artister/:artist', routes.views.artist);
     app.get('/info', routes.views.info);
     app.get('/frivillig', routes.views.frivillig);
@@ -43,3 +44,4 @@ exports = module.exports = function(app) {
 // Redirect Routes
 keystone.redirect('/nabo', 'https://bakkefestivalen.hoopla.no/sales/3248098352/?promo=bakkenabo');
 keystone.redirect('/nabovarsel', '/pdfs/nabovarsel.pdf');
+keystone.redirect('/artister', '/program');
