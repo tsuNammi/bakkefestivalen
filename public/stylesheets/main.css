@@ -272,6 +272,10 @@ img {
   max-height: 70px;
 }
 
+#nka {
+  max-height: 25px;
+}
+
 @media only screen and (min-width: 415px) {
   #partners {
     height: 100px;
