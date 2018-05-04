@@ -328,7 +328,7 @@ img {
 }
 
 .social a {
-  color: rgb(255,255,255);
+  color: rgb(255,255,255)!important;
   margin-right: 10px;
   margin-left: 10px;
 }

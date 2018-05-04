@@ -10,7 +10,11 @@ exports = module.exports = function (req, res) {
 	locals.section = 'info';
 
 	// Render the view
-	view.render('info', {title: "Info - Bakkefestivalen 2018"});
+	view.render('info', {
+		title: "Info - Bakkefestivalen 2018",
+		metaImage: "https://bakkefestivalen.no/images/kart2.png",
+		metaDescription: "Informasjon om festivaldagen."
+	});
 };
 
 // module.exports = function (req, res) {
