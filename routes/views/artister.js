@@ -10,7 +10,11 @@ exports = module.exports = function (req, res) {
 	locals.section = 'artister';
 
 	// Render the view
-	view.render('artister', {title: "Program - Bakkefestivalen 2018"});
+	view.render('artister', {
+		title: "Program - Bakkefestivalen 2018",
+		metaImage: "https://bakkefestivalen.no/images/program/program.png",
+		metaDescription: "Program og oversikt over aktiviteter på festivaldagen."
+	});
 };
 
 // module.exports = function (req, res) {
