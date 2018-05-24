@@ -333,3 +333,9 @@ img {
   margin-left: 10px;
 }
 
+.credits, .credits a {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
