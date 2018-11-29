@@ -43,6 +43,7 @@ exports = module.exports = function(app) {
 
 // Redirect Routes
 keystone.redirect('/nabo', 'https://bakkefestivalen.hoopla.no/sales/3248098352/?promo=bakkenabo');
-keystone.redirect('/billetter', 'https://bakkefestivalen.hoopla.no/sales/3347855109')
 keystone.redirect('/nabovarsel', '/pdfs/nabovarsel.pdf');
 keystone.redirect('/artister', '/program');
+keystone.redirect('/billetter', 'https://bakkefestivalen.hoopla.no/sales/3347855109');
+keystone.redirect('/team2019', 'https://docs.google.com/spreadsheets/d/1zfGpCkBMru_rdd8ustjVicYlPpvvQMpjrERCQ42owbw/edit#gid=634347005');
