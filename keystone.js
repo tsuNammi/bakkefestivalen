@@ -8,9 +8,9 @@ keystone.init({
   
   'name': 'Bakkefestivalen',
   
-  'favicon': 'public/favicon.png',
-  'less': 'public',
-  'static': ['public'],
+  'favicon': 'old/public/favicon.png',
+  'less': 'old/public',
+  'static': ['old/public'],
   
   'views': 'templates/views',
   'view engine': 'ejs',
